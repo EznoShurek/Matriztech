@@ -46,12 +46,27 @@ nav {
 }
 
 .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-main {
     font-size: 1.8rem;
     font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;
+}
+
+.logo-sub {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: -5px;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 .tech {
