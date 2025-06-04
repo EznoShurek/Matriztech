@@ -29,7 +29,7 @@ body {
 header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -52,6 +52,17 @@ nav {
     text-align: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 35px;
+    width: auto;
+}
+
 .logo-main {
     font-size: 1.8rem;
     font-weight: 800;
@@ -59,14 +70,6 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-top: -5px;
-    font-weight: 400;
-    text-transform: lowercase;
 }
 
 .tech {
@@ -103,6 +106,7 @@ nav a.active {
     text-align: center;
     position: relative;
     padding: 0;
+    padding-top: 100px;
     background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80');
     background-size: cover;
     background-position: center;
@@ -449,6 +453,14 @@ section {
 
     .contato-destaque p {
         font-size: 1.1rem;
+    }
+
+    .logo-image {
+        height: 30px;
+    }
+    
+    .logo-main {
+        font-size: 1.5rem;
     }
 }
 
@@ -900,9 +912,9 @@ html {
 /* Footer Styles */
 .footer-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
-    padding: 4rem 0;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    padding: 3rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -919,8 +931,8 @@ html {
 
 .link-group h4 {
     color: white;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .link-group ul {
@@ -928,7 +940,7 @@ html {
 }
 
 .link-group li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
 }
 
 .link-group a {
